@@ -1,0 +1,13 @@
+RobotTest
+ 
+toCharArray() => 문자열을 char로 반환
+
+map[i] = sc.next().toCharArray();
+
+배열 모든 값 확인 -> 완전 탐색
+
+
+
+
+
+
