@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 { text-align: center; font-weight : bold; text-shadow: 2px 4px 2px black;}
+        td { text-align : right; width : 150px;}
+        #box {
+            width : 700px;
+            margin: 0 auto;
+        }
+        #content {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        hr {height: 2px; background-color : darkorange;}
+        h1 {color: darkorange;}
+        table { margin: 0 auto; }
+        fieldset { text-align: left;}
+        p {text-align: right;}
+        legend {color : ForestGreen; font-weight: bold; text-shadow: yellow;}
+    </style>
+</head>
+<body>
+<div id = "content">
+    <h1>Become a Member</h1>
+    <hr>
+    
+    <div id = "box">
+        <fieldset>
+        <legend>Registration Information</legend>
+            <table>
+                <tr>
+                    <td><label>E-Mail :</label></td>
+                    <td><input type="email" id="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td><label>Password :</label></td>
+                    <td><input type="password" id="password1" name="password1" placeholder="At least 6 letters or numbers"></td>
+                </tr>
+                <tr>
+                    <td><label>Verify Password :</label> </td>
+                    <td><input type="password" id="password2" name="password2"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Member Information</legend>
+                <table>
+                    <tr>
+                        <td><label>First Name :</label></td>
+                        <td><input type="text" id="first_name" name="first_name"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Last Name :</label></td>
+                        <td><input type="text" id="last_name" name="last_name"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Address :</label> </td>
+                        <td><input type="text" id="address" name="address"></td>
+                    </tr>
+                    <tr>
+                        <td><label>City :</label> </td>
+                        <td><input type="text" id="address" name="address"></td>
+                    </tr>
+                    <tr>
+                        <td><label>State :</label> </td>
+                        <td><input type="text" id="address" name="address" placeholder="2-character code"></td>
+                    </tr>
+                    <tr>
+                        <td><label>ZIP Code :</label> </td>
+                        <td><input type="text" id="address" name="address" placeholder="5 or 9 digits"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Phone Number :</label> </td>
+                        <td><input type="text" id="address" name="address" placeholder="999-999-9999"></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership Information</legend>
+                    <table>
+                        <tr>
+                            <td><label>Membership Type :</label></td>
+                            <!-- <td><input type="email" id="email" name="email"></td> -->
+                            <td>
+                                <select style="width: 165px;">
+                                    <option value = "Junior">Junior</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Starting Date :</label></td>
+                            <td><input type="date" value="연도-월-일" id="date" name="date" style="width: 160px;"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Tickets for Guests :</label> </td>
+                            <td><input type="number" id="number" name="number" min="1" max="100" step="1" value="2" style="width:157px;"></td>
+                        </tr>
+                    </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Submit Your Membership</legend>
+                    <table>
+                        <tr>
+                            <td><input type="submit" value="Submit" style="width: 150px; border: 2px solid black;"></td>
+                            <td><input type="reset" value="Reset Fields" style="width: 150px"></td>
+                        </tr>
+                    </table>
+            </fieldset>
+    </div>
+    <br>
+    <hr>
+    <p>&copy; Copyright 2013 SCSA.</p>
+</div>
+</body>
+</html>
