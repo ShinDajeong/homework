@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        body {
+        background-image : url('http://drive.google.com/uc?export=view&id=1ifAKpBbupYdfRU-10rnTvfLjUJ2f0OXf');
+        background-repeat : no-repeat;
+        background-size : cover;
+        }
+
+        
+        .nav-container {
+            display: flex;
+            width: 100%;
+            margin: 0; 
+            padding: 0;
+            list-style-type: none;
+            
+        }
+
+        
+        .nav-item {
+            padding:10px;
+            cursor: pointer;
+        }
+
+        
+
+        /* 
+        .nav-item a {
+            text-align : center;
+            text-decoration: none;
+            color:blue;
+        } */
+
+        /* BODY */
+        
+        .profile{
+            width: 800px;
+            height: 400px;
+            background-color: white;
+            margin: 0 auto;
+            border-radius: 50px 50px;
+        }
+
+        .image {
+           width: 50%;
+           height: 100%;
+           float: left;
+           box-sizing: border-box;
+           border-right-style: dotted;
+        }
+
+        .text {
+            width: 50%;
+           height: 100%;
+           box-sizing: border-box;
+            float: right;
+            padding-left: 5%;
+            padding-top: 5%;
+        }
+        
+        .image img{
+            padding: 10%;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <ul class="nav-container">
+            <li class="nav-item"><a href="hwfront02_서울_5반_박종원.html"><img src="http://drive.google.com/uc?export=view&id=1Eyign6GPVyyHrCaJmV6ZWaFqbODfm3vD" alt="" width="60px" height="60px"></a>
+                
+            </li>
+            <li class="nav-item"><a href="hwfront02_서울_5반_신다정.html"><img src="http://drive.google.com/uc?export=view&id=1KuvKYbYcEFBbHFcsiRDzuA6IwFdIddKF" alt="" width="60px" height="60px"></a>
+            </li>
+        </ul>
+
+    </nav>
+    <!--  배경 부분 -->
+   
+
+    <div class="profile">
+        <div class="image">
+            <img src="http://drive.google.com/uc?export=view&id=1kCQf00923De-94kNp7HdHozs-Uzi7xO7" alt="" width="300px"
+                height="300px">
+
+        </div>
+        <div class="text">
+            <ul>
+                <li>Shin Dajeong</li>
+                <br>
+                <li>1996.06.07</li>
+                <br>
+                <li>주소시 주소구 주소동 주소주소주소주소</li>
+                <br>
+                <li>Computer Science</li>
+                <div class="dropdown">
+                    <br>
+                    <li>Phone Number</li>
+                    <div class="dropdown-content">
+                        <p>010-1234-5678</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <br>
+                    <li>E-mail</li>
+                    <div class="dropdown-content">
+                        <p>email@naver.com</p>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
