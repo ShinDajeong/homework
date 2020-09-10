@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <table>
+        <tr>
+            <td><input type="text" id="num1" value="0"></td>
+            <td><input type="text" id="num2" value="0"></td>
+            <td><input type="text" id="num3" value="0"></td>
+            <td><input type="text" id="num4" value="0"></td>
+            <td><input type="text" id="num5" value="0"></td>
+            <td><input type="text" id="num6" value="0"></td>				
+        </tr>
+    </table>
+    <a href="#" title="번호 추첨" onclick="makeNum(); printNum();" >번호생성</a>
+
+
+
+    <script type="text/javascript">
+	
+        var lotto=new Array();
+        
+        function makeNum(){
+            for(var i=0;i<6; i++){       
+                lotto[i]=Math.floor(Math.random()*45)+1;	  // 랜덤 숫자 1~45		    
+    
+                for(var k=0; k<i; k++){ //중복 검사
+                   if(lotto[i]==lotto[k]){ 
+                       i=i-1;      
+                       break;	
+                   }
+               }		
+            }
+            lotto.sort(compAsc); // 오름차순으로 정렬	
+            console.log(lotto[0], lotto[1], lotto[2], lotto[3], lotto[4], lotto[5]);
+
+        }
+        
+        
+        function printNum(){
+                
+            // setTimeout("document.num1.value=lotto[0];", 100);
+            // var num1 = document.getElementById("num1").value = lotto[0];
+            setTimeout(result1, 1000);
+            setTimeout(result2, 2000);
+            setTimeout(result3, 3000);
+            setTimeout(result4, 4000);
+            setTimeout(result5, 5000);
+            setTimeout(result6, 6000);
+            // setTimeout("document.num2.value=lotto[1];", 300);
+            // setTimeout("document.num3.value=lotto[2];", 500);
+            // setTimeout("document.num4.value=lotto[3];", 600);
+            // setTimeout("document.num5.value=lotto[4];", 800);
+            // setTimeout("document.num6.value=lotto[5];", 900);
+           
+            // setTimeout("clearInterval(id)",1800);
+            
+        }
+        
+        function result1() {
+            document.getElementById("num1").value = lotto[0];
+        }
+
+        function result2() {
+            document.getElementById("num2").value = lotto[1];
+        }
+
+        function result3() {
+            document.getElementById("num3").value = lotto[2];
+        }
+
+        function result4() {
+            document.getElementById("num4").value = lotto[3];
+        }
+
+        function result5() {
+            document.getElementById("num5").value = lotto[4];
+        }
+
+        function result6() {
+            document.getElementById("num6").value = lotto[5];
+        }
+        
+        
+        function compAsc(a,b){
+            return a-b;
+        }
+        
+        
+        	 
+        
+        
+    </script>
+</body>
+</html>
